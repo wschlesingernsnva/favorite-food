@@ -1,0 +1,46 @@
+* {
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.nav {
+    position: sticky;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 5px 15px;
+    height: 70px;
+    background-color: hsl(0, 0%, 97%);
+}
+
+.nav-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.nav-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.nav-item {
+    background-color: hsl(0, 0%, 92%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
