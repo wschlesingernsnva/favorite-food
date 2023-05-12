@@ -28,11 +28,33 @@ header {
 	color: inherit;
 }
 
+main {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.sidebar {
+	background-color: hsl(0, 0%, 86%);
+	grid-column: 1 / 4;
+	padding: 25px;
+	font-size: 1.1em;
+	overflow: auto;
+}
+
+.sidebar > p:first-child {
+	margin-top: 0;
+}
+
+.sidebar > p:last-child {
+	margin-bottom: 0;
+}
+
 .main-container {
 	display: flex;
 	flex-flow: column;
-	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
+	grid-column: 4 / 13;
 }
 
 .divider {
@@ -65,18 +87,19 @@ header {
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
-	padding: 50px 20px;
+	padding: 50px;
 	gap: 40px;
 }
 
 .sushi-item {
 	text-align: center;
 	font-size: 1.25em;
-	width: 500px;
+	width: 100%;
 }
 
 .sushi-photo {
-	width: 100%;
+	width: 500px;
+	max-width: 100%;
 }
 
 .sushi-name {
