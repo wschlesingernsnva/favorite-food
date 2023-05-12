@@ -1,0 +1,101 @@
+* {
+	font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	position: sticky;
+	top: 0;
+}
+
+.nav {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 10px 20px;
+	height: 70px;
+	background-color: hsl(0, 0%, 95%);
+}
+
+.nav-title {
+	font-size: 2rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+}
+
+.main-container {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.divider {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background-color: hsl(0, 0%, 90%);
+	padding: 20px;
+	border: none;
+	cursor: pointer;
+	font-size: 1.25rem;
+}
+
+.divider:hover {
+	background-color: hsl(0, 0%, 85%);
+}
+
+.divider::after {
+	content: "\2212";
+}
+
+.divider.closed::after {
+	content: "\002B";
+}
+
+.roll-section {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 20px;
+	gap: 40px;
+}
+
+.sushi-item {
+	text-align: center;
+	font-size: 1.25em;
+	width: 500px;
+}
+
+.sushi-photo {
+	width: 100%;
+}
+
+.sushi-name {
+	margin: 5px 0 2px;
+}
+
+.sushi-desc {
+	margin-top: 1px;
+	font-size: 0.9em;
+	color: hsl(0, 0%, 75%);
+	width: 100%;
+}
+
+footer {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 10px 20px;
+	height: 100px;
+	background-color: hsl(0, 0%, 95%);
+}
