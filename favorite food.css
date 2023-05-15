@@ -57,6 +57,16 @@ main {
 	grid-column: 4 / 13;
 }
 
+@media (max-width: 625px) {
+	.sidebar {
+		display: none;
+	}
+
+	.main-container {
+		grid-column: 1 / 13;
+	}
+}
+
 .divider {
 	display: flex;
 	flex-flow: row;
