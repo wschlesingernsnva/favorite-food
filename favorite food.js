@@ -2,10 +2,8 @@ function main() {
 	const dividers = document.querySelectorAll(".divider");
 	const sections = document.querySelectorAll(".roll-section");
 	for (let dividerIndex = 0; dividerIndex < dividers.length; dividerIndex++) {
-		let thisDivider = dividers[dividerIndex];
-		let thisSection = sections[dividerIndex];
-		console.log(thisDivider);
-		console.log(thisSection);
+		const thisDivider = dividers[dividerIndex];
+		const thisSection = sections[dividerIndex];
 		thisDivider.addEventListener("click", () => {
 			const dividerClasses = thisDivider.classList;
 			if (dividerClasses.contains("closed")) {
