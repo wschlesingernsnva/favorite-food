@@ -63,7 +63,7 @@ main {
 	}
 
 	.main-container {
-		grid-column: 1 / 13;
+		grid-column-start: 1;
 	}
 }
 
